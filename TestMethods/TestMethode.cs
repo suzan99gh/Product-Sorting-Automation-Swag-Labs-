@@ -12,12 +12,22 @@ using AventStack.ExtentReports.Model;
 using static System.Net.Mime.MediaTypeNames;
 using SwagLabs.AssistantMethods;
 using SwagLabs.POM;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel.Client;
+using Swag_Labs_Filters.AssistantMethods;
+using OpenQA.Selenium;
+using Swag_Labs_Filters.POM;
 
 namespace SwagLabs.TestMethods
 {
     [TestClass]
     public class TestMethode
     {
+        private IWebDriver webDriver;
+
+        public TestMethode(IWebDriver driver)
+        {
+            webDriver = driver;
+        }
 
         [TestMethod]
         //[Priority(1)]
@@ -28,8 +38,19 @@ namespace SwagLabs.TestMethods
                 CommonMethods.NavigateToURL(GlobalConstant.LoginLink);
                 ManageDriver.MaximizeDriver();
                 Login_AssistantMethods.UserLogin();
+                FilterTest_AssistantMethods.AtoZoption();
 
-               
+                FilterTest_POM filterPage = new FilterTest_POM(webDriver);
+                List<string> actualNames = filterPage.OptionResult();
+                Console.WriteLine(actualNames);
+                List<string> expectedNames = actualNames.OrderByDescending(n => n).ToList();
+                Console.WriteLine(expectedNames);
+                // Assert
+                CollectionAssert.AreEqual(expectedNames, actualNames, "Products are not sorted Z to A");
+
+                // 4. Assert both lists are the same
+                CollectionAssert.AreEqual(expectedNames, actualNames, "Products are not sorted Z to A");
+
             }
             catch (Exception ex)
             {

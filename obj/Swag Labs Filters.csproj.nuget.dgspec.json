@@ -60,7 +60,7 @@
             },
             "MSTest.TestAdapter": {
               "target": "Package",
-              "version": "[3.10.4, )",
+              "version": "[3.6.1, )",
               "versionOverride": "[3.6.1, )"
             },
             "MSTest.TestFramework": {
@@ -72,6 +72,10 @@
               "target": "Package",
               "version": "[17.11.1, )",
               "versionOverride": "[17.11.1, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.35.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
