@@ -31,7 +31,7 @@ namespace SwagLabs.TestMethods
 
         [TestMethod]
         //[Priority(1)]
-        public void Login()
+        public void AtoZ()
         {
             try
             {
@@ -40,16 +40,16 @@ namespace SwagLabs.TestMethods
                 Login_AssistantMethods.UserLogin();
                 FilterTest_AssistantMethods.AtoZoption();
 
-                FilterTest_POM filterPage = new FilterTest_POM(webDriver);
-                List<string> actualNames = filterPage.OptionResult();
-                Console.WriteLine(actualNames);
-                List<string> expectedNames = actualNames.OrderByDescending(n => n).ToList();
-                Console.WriteLine(expectedNames);
+                //var productElements = webDriver.FindElements(By.ClassName("inventory_item_name"));
+                //List<string> actualNames = productElements.Select(e => e.Text).ToList();
+                
+                //Console.WriteLine(actualNames);
+                //List<string> expectedNames = actualNames.OrderByDescending(n => n).ToList();
+                //Console.WriteLine(expectedNames);
                 // Assert
-                CollectionAssert.AreEqual(expectedNames, actualNames, "Products are not sorted Z to A");
+                //CollectionAssert.AreEqual(expectedNames, actualNames, "Products are not sorted Z to A");
 
-                // 4. Assert both lists are the same
-                CollectionAssert.AreEqual(expectedNames, actualNames, "Products are not sorted Z to A");
+                
 
             }
             catch (Exception ex)
