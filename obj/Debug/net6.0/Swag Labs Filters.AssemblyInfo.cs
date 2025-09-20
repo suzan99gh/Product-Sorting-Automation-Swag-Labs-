@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Swag Labs Filters")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b3543610974353798ede9cf5ef3505f83c283ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c564dbf1d3fac7324b4a629f1e987c4aa5493b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Swag Labs Filters")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Swag Labs Filters")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

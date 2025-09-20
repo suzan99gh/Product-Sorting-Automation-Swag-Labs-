@@ -15,14 +15,6 @@
       "RelativeMoniker": "D:0:0:{788299C2-F5A0-46AE-9966-7A2C49D6B702}|Swag Labs Filters.csproj|solutionrelative:pom\\filtertest_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{788299C2-F5A0-46AE-9966-7A2C49D6B702}|Swag Labs Filters.csproj|c:\\users\\moalgharx\\source\\repos\\swag labs filters\\pom\\login_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{788299C2-F5A0-46AE-9966-7A2C49D6B702}|Swag Labs Filters.csproj|solutionrelative:pom\\login_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{788299C2-F5A0-46AE-9966-7A2C49D6B702}|Swag Labs Filters.csproj|c:\\users\\moalgharx\\source\\repos\\swag labs filters\\pom\\products_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{788299C2-F5A0-46AE-9966-7A2C49D6B702}|Swag Labs Filters.csproj|solutionrelative:pom\\products_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{788299C2-F5A0-46AE-9966-7A2C49D6B702}|Swag Labs Filters.csproj|c:\\users\\moalgharx\\source\\repos\\swag labs filters\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{788299C2-F5A0-46AE-9966-7A2C49D6B702}|Swag Labs Filters.csproj|solutionrelative:mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -34,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login_POM.cs",
-              "DocumentMoniker": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\POM\\Login_POM.cs",
-              "RelativeDocumentMoniker": "POM\\Login_POM.cs",
-              "ToolTip": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\POM\\Login_POM.cs",
-              "RelativeToolTip": "POM\\Login_POM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T14:56:47.156Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -57,9 +36,22 @@
               "RelativeDocumentMoniker": "AssistantMethods\\FilterTest_AssistantMethods.cs",
               "ToolTip": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\AssistantMethods\\FilterTest_AssistantMethods.cs",
               "RelativeToolTip": "AssistantMethods\\FilterTest_AssistantMethods.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAUwCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwB8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-14T14:32:11.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestMethode.cs",
+              "DocumentMoniker": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\TestMethods\\TestMethode.cs",
+              "RelativeDocumentMoniker": "TestMethods\\TestMethode.cs",
+              "ToolTip": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\TestMethods\\TestMethode.cs",
+              "RelativeToolTip": "TestMethods\\TestMethode.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwHMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T16:00:52.277Z",
               "EditorCaption": ""
             },
             {
@@ -70,39 +62,14 @@
               "RelativeDocumentMoniker": "POM\\FilterTest_POM.cs",
               "ToolTip": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\POM\\FilterTest_POM.cs",
               "RelativeToolTip": "POM\\FilterTest_POM.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwD4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T16:03:17.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Products_POM.cs",
-              "DocumentMoniker": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\POM\\Products_POM.cs",
-              "RelativeDocumentMoniker": "POM\\Products_POM.cs",
-              "ToolTip": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\POM\\Products_POM.cs",
-              "RelativeToolTip": "POM\\Products_POM.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAwDwAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T16:02:31.412Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TestMethode.cs",
-              "DocumentMoniker": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\TestMethods\\TestMethode.cs",
-              "RelativeDocumentMoniker": "TestMethods\\TestMethode.cs",
-              "ToolTip": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\TestMethods\\TestMethode.cs",
-              "RelativeToolTip": "TestMethods\\TestMethode.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAgwCEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T16:00:52.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "MSTestSettings.cs",
               "DocumentMoniker": "C:\\Users\\moalgharX\\source\\repos\\Swag Labs Filters\\MSTestSettings.cs",
               "RelativeDocumentMoniker": "MSTestSettings.cs",

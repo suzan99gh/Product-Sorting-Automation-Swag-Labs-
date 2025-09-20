@@ -43,25 +43,19 @@ namespace Swag_Labs_Filters.POM
         public void ClickZtoA()
         {
             IWebElement dropdown = webDriver.FindElement(fillterOption);
-
             SelectElement select = new SelectElement(dropdown);
             IWebElement element = CommonMethods.WaitAndFindElement(fillterOption);
-            select.SelectByValue("aZ");
-
+            select.SelectByValue("za");
             CommonMethods.Highlightelement(element);
-            element.Click();
         }
 
         public void ClickASC()
         {
             IWebElement dropdown = webDriver.FindElement(fillterOption);
-
             SelectElement select = new SelectElement(dropdown);
             IWebElement element = CommonMethods.WaitAndFindElement(fillterOption);
             select.SelectByValue("lohi");
-
             CommonMethods.Highlightelement(element);
-            element.Click();
         }
 
         public void ClickDESC()
@@ -73,7 +67,7 @@ namespace Swag_Labs_Filters.POM
             select.SelectByValue("hilo");
 
             CommonMethods.Highlightelement(element);
-            element.Click();
+
         }
     }
 }
