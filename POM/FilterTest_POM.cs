@@ -29,14 +29,15 @@ namespace Swag_Labs_Filters.POM
 
         public void ClickAtoZ() 
         {
-            IWebElement dropdown = webDriver.FindElement(fillterOption);
+            //IWebElement dropdown = webDriver.FindElement(fillterOption);
+            var select = new SelectElement(ManageDriver.driver.FindElement(By.ClassName("product_sort_container")));
+            select.SelectByValue("az");
+            //SelectElement select = new SelectElement(dropdown);
+            //IWebElement element = CommonMethods.WaitAndFindElement(fillterOption);
+            //select.SelectByValue("aZ");
 
-            SelectElement select = new SelectElement(dropdown);
-            IWebElement element = CommonMethods.WaitAndFindElement(fillterOption);
-            select.SelectByValue("aZ");
-
-            CommonMethods.Highlightelement(element);
-            element.Click();
+            //CommonMethods.Highlightelement(select);
+            //element.Click();
         }
 
         public void ClickZtoA()

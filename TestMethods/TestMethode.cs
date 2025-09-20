@@ -16,53 +16,45 @@ using Microsoft.VisualStudio.TestPlatform.ObjectModel.Client;
 using Swag_Labs_Filters.AssistantMethods;
 using OpenQA.Selenium;
 using Swag_Labs_Filters.POM;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium.Support.UI;
+using System.Xml.Linq;
 
 namespace SwagLabs.TestMethods
 {
     [TestClass]
     public class TestMethode
     {
+
         private IWebDriver webDriver;
 
-        public TestMethode(IWebDriver driver)
+        public TestMethode()
         {
-            webDriver = driver;
+            webDriver = ManageDriver.driver; // اسحب الـ driver من الكلاس المسؤول عنه
         }
 
         [TestMethod]
-        //[Priority(1)]
         public void AtoZ()
         {
-            try
+            CommonMethods.NavigateToURL(GlobalConstant.LoginLink);
+            ManageDriver.MaximizeDriver();
+            Login_AssistantMethods.UserLogin();
+          
+            
+            FilterTest_AssistantMethods.AtoZoption();
+
+            var productElements = ManageDriver.driver.FindElements(By.ClassName("inventory_item_name"));
+            List<string> actualNames = productElements.Select(e => e.Text).ToList();
+            foreach (var name in actualNames)
             {
-                CommonMethods.NavigateToURL(GlobalConstant.LoginLink);
-                ManageDriver.MaximizeDriver();
-                Login_AssistantMethods.UserLogin();
-                FilterTest_AssistantMethods.AtoZoption();
-
-                //var productElements = webDriver.FindElements(By.ClassName("inventory_item_name"));
-                //List<string> actualNames = productElements.Select(e => e.Text).ToList();
-                
-                //Console.WriteLine(actualNames);
-                //List<string> expectedNames = actualNames.OrderByDescending(n => n).ToList();
-                //Console.WriteLine(expectedNames);
-                // Assert
-                //CollectionAssert.AreEqual(expectedNames, actualNames, "Products are not sorted Z to A");
-
-                
-
+                Console.WriteLine(name);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine("The issue is : " + ex.Message);
-            }
+
+            List<string> expectedNames = actualNames.OrderBy(n => n).ToList();
+            CollectionAssert.AreEqual(expectedNames, actualNames, "Products are not sorted A to Z");
+            Console.WriteLine("Test completed Successfully");
         }
 
-        //[ClassCleanup]
-        //public static void ClassCleanup()
-        //{
-        //    ManageDriver.CloseDriver();
-
-        //}
-    } 
+       
+    }
 }
